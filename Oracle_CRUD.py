@@ -6,8 +6,8 @@ import cx_Oracle
 #================================================================================================#
 
 try:
-    conn = cx_Oracle.connect("system/Oracle1999@192.168.43.177:1521/XEPDB1")
-
+    conn = cx_Oracle.connect("system/SYSTEM@localhost:1521/XEPDB1")
+    print("Database Connected Succefully")
     cursor = conn.cursor()
 except:
     exit()
@@ -64,7 +64,7 @@ def display(tree):
         tree.delete(i)
 
     query = "Select * from student"
-    cursor.execute(query)
+    # cursor.execute(query)
 
     rows = cursor.fetchall()
 
@@ -280,7 +280,7 @@ uSubmit.grid(row=2,column=1)
 
 #=====================================================================================================================
 
-display(tv)
+# display(tv)
 #=========================================================================================================================
 
 
