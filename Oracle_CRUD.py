@@ -26,7 +26,7 @@ topFrame.pack()
 midFrame.pack()
 bottomFrame.pack(fill=BOTH, expand=1)
 
-Label(topFrame,text="CRUD Operations on Oracle using Python",font=('Montserrat',25),fg='red',bg='white').pack(side=TOP)
+Label(topFrame,text="CRUD Operations on Oracle using Python",font=('Montserrat',23),fg='Black',bg='white').pack(side=TOP)
 
 rf1=Frame(bottomFrame,bg='white',borderwidth = 1, relief = SUNKEN)
 cf1=Frame(bottomFrame,bg='white',borderwidth = 1, relief = SUNKEN,width=70)
@@ -41,7 +41,7 @@ df1.pack(side=LEFT,fill=BOTH,padx=5,pady=5,expand=1)
 
 #READ UI
 
-Label(rf1,text="READ",bg='white',font=('Montserrat',15),fg='blue').grid(row=0)
+Label(rf1,text="Database",bg='white',font=('Montserrat',15),fg='blue').grid(row=0)
 
 style = ttk.Style()
 style.configure("Treeview",background="white",foreground='black',rowheight=25)
@@ -215,7 +215,7 @@ def delete():
 
 #INSERT UI
 
-Label(cf1,text="CREATE",bg='white',font=('Montserrat',15),fg='blue').grid(row=0,padx=5,pady=5)
+Label(cf1,text="CREATE",bg='white',font=('Montserrat',15),fg='green').grid(row=0,padx=5,pady=5)
 Label(cf1,text='PRN',bg='white').grid(row=1,column=0,padx=5,pady=5)
 Label(cf1,text='First Name',bg='white').grid(row=2,column=0,padx=5,pady=5)
 Label(cf1,text='Branch',bg='white').grid(row=3,column=0,padx=5,pady=5)
@@ -242,7 +242,7 @@ cSubmit.grid(row=6,column=1)
 
 #UPDATE UI
 
-Label(uf1,text="UPDATE",bg='white',font=('Montserrat',15),fg='blue').grid(row=0,padx=5,pady=5)
+Label(uf1,text="UPDATE",bg='white',font=('Montserrat',15),fg='orange').grid(row=0,padx=5,pady=5)
 Label(uf1,text='PRN',bg='white').grid(row=1,column=0,padx=5,pady=5)
 Label(uf1,text='(*required)',bg='white',font=("Montserrat", 8)).grid(row=1,column=2,padx=5,pady=5)
 Label(uf1,text='First Name',bg='white').grid(row=2,column=0,padx=5,pady=5)
@@ -270,7 +270,7 @@ uSubmit.grid(row=6,column=1)
 
 #DELETE UI
 
-Label(df1,text="DELETE",bg='white',font=('Montserrat',15),fg='blue').grid(row=0,padx=5,pady=5)
+Label(df1,text="DELETE",bg='white',font=('Montserrat',15),fg='red').grid(row=0,padx=5,pady=5)
 Label(df1,text='PRN',bg='white').grid(row=1,column=0,padx=5,pady=5)
 dpEntry=Entry(df1,width=20)
 dpEntry.grid(row=1,column=1)
